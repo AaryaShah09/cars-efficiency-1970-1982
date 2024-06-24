@@ -10,7 +10,6 @@ Cars in 2024 have almost 4 times the efficiency of cars from 1970, but also come
 #| message: false
 #| echo: false
 
-
 library(ggplot2)
 library(gganimate)
 library(readr)
