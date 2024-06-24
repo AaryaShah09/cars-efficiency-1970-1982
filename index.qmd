@@ -1,24 +1,23 @@
 ---
-title: "Car-graphic"
+title: "Car Efficiency Data Analysis"
 author: "Aarya"
 format: html
 ---
 
-Cars in 1982 almost doubled in miles per gallon (of gasoline) when compared to cars in 1970.The following data was pulled from the top-selling cars between 1970 and 1982. Then, the company's data was used to compare the efficiency and weight cars during this time.The average number of miles per gallon that cars could produce increased by about 5-10% each year.
+Cars in 1982 almost doubled in miles per gallon (of gasoline) when compared to cars in 1970.The following data was pulled from the top-selling cars between 1970 and 1982. Then, the company's data was used to compare the efficiency, horsepower, and weight of cars during this time.The average number of miles per gallon that cars could produce increased by about 5-10% each year.
 
 ```{r}
 #| message: false
 #| warning: false
 #| echo: false
-# Load necessary libraries
+
+
 library(ggplot2)
 library(gganimate)
 library(tidyverse)
 
-# Read the CSV file
 data <- read_csv('./data/Automobile.csv') 
 
-# Create the animated scatter plot
 p <- ggplot(data, aes(x = horsepower, y = mpg, color = factor(cylinders), size = weight)) +
   geom_point() +
   labs(title = 'Automobile Data: {frame_time}', x = 'Horsepower', y = 'Miles per Gallon (MPG)', size = "Weight", color = "Cylinders") +
