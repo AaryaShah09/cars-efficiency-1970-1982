@@ -4,25 +4,53 @@ author: "Aarya"
 format: html
 ---
 
-Cars in 1982 almost doubled in miles per gallon (of gasoline) when compared to cars in 1970.The following data was pulled from the top-selling cars between 1970 and 1982. Then, the company's data was used to compare the efficiency, horsepower, and weight of cars during this time.The average number of miles per gallon that cars could produce increased by about 5-10% each year.
+Cars in 2024 have almost 4 times the efficiency of cars from 1970, but also come in new variants, such as electric and hybrid. he following data was pulled from the top-selling cars between 1970 and 2024. Then, the company's data was used to compare the efficiency, mileage, and fuel type, and engine size of cars during this time. The average number of miles per gallon that cars could produce increased by about 5-10% a year from 1970 to 2011, but saw an increase of up to 300% from 2011 to 2024 due to the introduction of electric and hybrid cars. 
 
 ```{r}
 #| message: false
-#| warning: false
 #| echo: false
 
 
 library(ggplot2)
 library(gganimate)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
-data <- read_csv('./data/Automobile.csv') 
+cars_data <- read_csv("./data/CarsData.csv")
+automobile_data <- read_csv("./data/Automobile.csv")
 
-p <- ggplot(data, aes(x = horsepower, y = mpg, color = factor(cylinders), size = weight)) +
-  geom_point() +
-  labs(title = 'Automobile Data: {frame_time}', x = 'Horsepower', y = 'Miles per Gallon (MPG)', size = "Weight", color = "Cylinders") +
-  transition_time(model_year + 1900) +
+# Align the columns in automobile_data to match cars_data
+automobile_data <- automobile_data |>
+  rename(
+    model = name,
+    engineSize = displacement,
+    year = model_year,
+    mpg = mpg
+  ) |>
+  mutate(
+    price = NA,
+    transmission = NA,
+    mileage = NA,
+    fuelType = NA,
+    tax = NA,
+    Manufacturer = NA
+  )
+
+automobile_data <- automobile_data |>
+  select(model, year, price, transmission, mileage, fuelType, tax, mpg, engineSize, Manufacturer)
+
+combined_data <- bind_rows(cars_data, automobile_data) |>
+  filter(year >= 1970)
+
+# Create the scatter plot
+p <- ggplot(combined_data, aes(x = engineSize, y = mpg, color = fuelType, size = mileage)) +
+  geom_point(alpha = 0.7) +
+  scale_size(range = c(1, 10), name = "Mileage") +
+  labs(title = 'Year: {frame_time}', x = 'Engine Size', y = 'MPG', color = "Fuel Type", size = "Mileage") +
+  theme_minimal() + 
+  transition_time(year) + 
   ease_aes('linear')
 
 p
+
 ```

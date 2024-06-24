@@ -4,5 +4,5 @@ title: "Sources"
 
 This graph was made in assistance with [ChatGPT](https://chatgpt.com/).
 
-This data set was pulled from [Kaggle](https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset/data)
+This data set was pulled from [Automobile-data](https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset/data) and from [Cars-Data](https://www.kaggle.com/datasets/meruvulikith/90000-cars-data-from-1970-to-2024).
 
