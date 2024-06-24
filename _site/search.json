@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Sources.html",
+    "href": "Sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "This graph was made in assistance with ChatGPT.\nThis data set was pulled from Automobile-data and from Cars-Data."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -9,15 +16,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Car-graphic",
+    "title": "Car Efficiency Data Analysis",
     "section": "",
-    "text": "Cars in 1982 almost doubled in miles per gallon (of gasoline) when compared to cars in 1970.The following data was pulled from the top-selling cars between 1970 and 1982. Then, the company’s data was used to compare the efficiency and weight cars during this time.The average number of miles per gallon that cars could produce increased by about 5-10% each year."
-  },
-  {
-    "objectID": "Sources.html",
-    "href": "Sources.html",
-    "title": "Sources",
-    "section": "",
-    "text": "This graph was made in assistance with ChatGPT.\nThis data set was pulled from Kaggle"
+    "text": "Cars in 2024 have almost 4 times the efficiency of cars from 1970, but also come in new variants, such as electric and hybrid. he following data was pulled from the top-selling cars between 1970 and 2024. Then, the company’s data was used to compare the efficiency, mileage, and fuel type, and engine size of cars during this time. The average number of miles per gallon that cars could produce increased by about 5-10% a year from 1970 to 2011, but saw an increase of up to 300% from 2011 to 2024 due to the introduction of electric and hybrid cars."
   }
 ]
