@@ -1,0 +1,10 @@
+---
+title: "About"
+---
+
+Hi, I am Aarya Shah You can find me through my [Github](https://github.com/AaryaShah09) or email me at shahaarya309@gmail.com.
+
+This is an analysis between horsepower and average miles per gallon. [Car Efficiency](https://github.com/AaryaShah09/cars-efficiency-1970-1982)
+
+
+[Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info/)

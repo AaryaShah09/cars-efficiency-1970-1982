@@ -1,0 +1,8 @@
+---
+title: "Sources"
+---
+
+This graph was made in assistance with [ChatGPT](https://chatgpt.com/).
+
+This data set was pulled from [Kaggle](https://www.kaggle.com/datasets/tawfikelmetwally/automobile-dataset/data)
+

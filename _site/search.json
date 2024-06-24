@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I am Aarya Shah You can find me through my Github or email me at shahaarya309@gmail.com.\nThis is an analysis between horsepower and average miles per gallon. Car Efficiency\nKane’s Free Data Science Bootcamp"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Car-graphic",
+    "section": "",
+    "text": "Cars in 1982 almost doubled in miles per gallon (of gasoline) when compared to cars in 1970.The following data was pulled from the top-selling cars between 1970 and 1982. Then, the company’s data was used to compare the efficiency and weight cars during this time.The average number of miles per gallon that cars could produce increased by about 5-10% each year."
+  },
+  {
+    "objectID": "Sources.html",
+    "href": "Sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "This graph was made in assistance with ChatGPT.\nThis data set was pulled from Kaggle"
+  }
+]
